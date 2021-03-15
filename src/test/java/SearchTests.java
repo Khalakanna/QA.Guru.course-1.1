@@ -8,6 +8,15 @@ import static com.codeborne.selenide.Selenide.open;
 public class SearchTests {
 
     @Test
+    void AppleSearchTest() {
+        open("https://www.google.com/");
+
+        $(byName("q")).setValue("apple").pressEnter();
+
+        $("#search").shouldHave(text("apple.com"));
+    }
+
+    @Test
     void selenideSearchTest() {
         open("https://www.google.com/");
 
