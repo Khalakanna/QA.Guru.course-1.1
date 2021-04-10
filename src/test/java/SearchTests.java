@@ -25,3 +25,5 @@ public class SearchTests {
         $("#search").shouldHave(text("selenide.org"));
     }
 }
+
+// comment for pull request
